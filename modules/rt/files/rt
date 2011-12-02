@@ -1,0 +1,23 @@
+Package: libdbix-searchbuilder-perl 
+Pin: release a=squeeze-backports
+Pin-Priority: 600
+
+Package: liblog-dispatch-perl 
+Pin: release a=squeeze-backports
+Pin-Priority: 600
+
+Package: libplack-perl
+Pin: release a=squeeze-backports
+Pin-Priority: 600
+
+Package: libhtml-rewriteattributes-perl 
+Pin: release a=squeeze-backports
+Pin-Priority: 600
+
+Package: libdevel-stacktrace-ashtml-perl
+Pin: release a=squeeze-backports
+Pin-Priority: 600
+
+Package: libdevel-stacktrace-perl
+Pin: release a=squeeze-backports
+Pin-Priority: 600

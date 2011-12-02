@@ -1,0 +1,13 @@
+# THE BASICS:
+
+Set($rtname, 'rt.foo.com');
+Set($Organization, 'My Org');
+
+Set($CorrespondAddress , 'rt@rt.foo.com');
+Set($CommentAddress , 'rt-comment@rt.foo.com');
+
+# THE WEBSERVER:
+
+Set($WebPath , "/rt");
+Set($WebBaseURL , "https://rt.foo.com");
+Set($WebDomain, 'rt.foo.com');

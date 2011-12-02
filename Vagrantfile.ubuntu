@@ -1,0 +1,20 @@
+Vagrant::Config.run do |config|
+  config.vm.box = "ubuntu-11.10-server-amd64"
+  config.vm.box_url = "http://cwebber.ucr.edu/vagrant/ubuntu-11.10-server-amd64.box"
+  config.vm.network "10.0.0.10"
+  config.vm.share_folder "v-data", "/data", "v-data"
+
+  config.vm.customize do |vm|
+      vm.memory_size = 512
+  end
+
+  # Forward a port from the guest to the host, which allows for outside
+  # computers to access the VM, whereas host only networking does not.
+  # config.vm.forward_port "http", 80, 8080
+
+   config.vm.provision :puppet, :module_path => "modules" do |puppet|
+     puppet.manifests_path = "manifests"
+     puppet.manifest_file  = "site.pp"
+   end
+
+end
