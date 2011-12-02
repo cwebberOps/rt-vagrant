@@ -8,10 +8,12 @@ This requires you to have Vagrant setup. Please see http://vagrantup.com for mor
 # Getting Started
 
 Clone the repo and make it your working directory:
+
     git clone git://github.com/cwebberOps/rt-vagrant.git
     cd rt-vagrant
 
 Bring up the new instance:
+
     vagrant up
 
 Once everything is up browse to http://10.0.0.10/rt to get started.
